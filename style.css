@@ -1,0 +1,21 @@
+body {
+    display: flex;
+}
+
+#container {
+        display: flex;
+        flex: 1 0 auto;
+        height: 900px;
+}
+
+.rows {
+    flex: auto;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.columns {
+    border: 1px solid black;
+    flex: auto;
+}
