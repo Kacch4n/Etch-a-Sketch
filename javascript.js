@@ -1,4 +1,4 @@
-const squares = 16;
+const squares = 100;
 const container = document.querySelector("#container");
 
 function createRows () {
@@ -24,3 +24,11 @@ function createColumns () {
 };
 
 createColumns();
+
+const columns = document.querySelectorAll(".columns");
+
+columns.forEach((column) => {
+    column.addEventListener("mouseover", () => {
+        column.style.background = "black";
+    });
+});
