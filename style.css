@@ -1,5 +1,12 @@
 body {
     display: flex;
+    flex-direction: column;
+}
+
+button {
+    align-self: center;
+    margin: 20px;
+    padding: 20px 100px 20px 100px;
 }
 
 #container {
