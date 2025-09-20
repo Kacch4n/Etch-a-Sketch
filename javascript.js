@@ -41,8 +41,8 @@ const button = document.querySelector("button");
 button.addEventListener("click", () => {
     let sketchpadSizeRows = prompt("How many rows?");
     let sketchpadSizeColumns = prompt("How many columns?");
-    if (sketchpadSizeRows == null || sketchpadSizeRows == "") {
-        text = "U cancelled the change";
+    if (sketchpadSizeRows > 100 || sketchpadSizeColumns > 100) {
+        alert("Rows or columns number should be less than 100 plis");
     } else {
         while (container.hasChildNodes()) {
             container.removeChild(container.firstChild);
